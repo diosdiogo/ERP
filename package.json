@@ -13,11 +13,11 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "font-awesome": "^4.7.0",
     "axios": "^0.21.1",
     "bootstrap": "^5.1.0",
     "clean-webpack-plugin": "^4.0.0",
     "favicons-webpack-plugin": "^5.0.2",
+    "font-awesome": "^4.7.0",
     "i": "^0.3.7",
     "npm": "^7.24.1",
     "react": "^17.0.2",
@@ -35,8 +35,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack --mode development",
+    "build": "webpack --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -58,5 +58,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
